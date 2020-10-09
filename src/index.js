@@ -29,13 +29,13 @@ const authLink = setContext((_, { headers }) => {
 
 // 2
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000'
+  uri: 'https://main.d222j3pz71yl5s.amplifyapp.com/'
 })
 
 // 3
 
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:4000`,
+  uri: `ws://main.d222j3pz71yl5s.amplifyapp.com/`,
   options: {
     reconnect: true,
     connectionParams: {
